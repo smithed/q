@@ -11,7 +11,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="manager" Type="Folder">
+			<Item Name="publisher.lvclass" Type="LVClass" URL="../publisher/publisher.lvclass"/>
 			<Item Name="starburst.lvclass" Type="LVClass" URL="../starburst/starburst.lvclass"/>
+			<Item Name="subscriber.lvclass" Type="LVClass" URL="../subscriber/subscriber.lvclass"/>
 		</Item>
 		<Item Name="parents" Type="Folder">
 			<Item Name="communicator message.lvclass" Type="LVClass" URL="../message/communicator message.lvclass"/>
@@ -19,6 +21,7 @@
 			<Item Name="connection client.lvclass" Type="LVClass" URL="../client/connection client.lvclass"/>
 			<Item Name="connection maintainer.lvclass" Type="LVClass" URL="../connection/connection maintainer.lvclass"/>
 			<Item Name="connection server.lvclass" Type="LVClass" URL="../server/connection server.lvclass"/>
+			<Item Name="queue manager.lvclass" Type="LVClass" URL="../manager/queue manager.lvclass"/>
 		</Item>
 		<Item Name="queue" Type="Folder">
 			<Item Name="Queue client.lvclass" Type="LVClass" URL="../Queue Client/Queue client.lvclass"/>
@@ -31,6 +34,7 @@
 			<Item Name="TCP server.lvclass" Type="LVClass" URL="../TCP/TCP server.lvclass"/>
 		</Item>
 		<Item Name="test" Type="Folder">
+			<Item Name="pubsub.vi" Type="VI" URL="../subscriber/pubsub.vi"/>
 			<Item Name="queue client testing.vi" Type="VI" URL="../testing/queue client testing.vi"/>
 			<Item Name="queue combined test.vi" Type="VI" URL="../testing/queue combined test.vi"/>
 			<Item Name="queue server testing.vi" Type="VI" URL="../testing/queue server testing.vi"/>
